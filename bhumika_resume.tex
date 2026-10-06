@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -80,13 +81,12 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Bhumika Gurav} \\ \vspace{1pt}
+    {\Huge \scshape Bhumika Gurav} \\ \vspace{4pt}
     \small
-    (+91) 7760174205 \quad
-    \href{mailto:guravbhumika808@gmail.com}{\underline{guravbhumika808@gmail.com}} \quad
-    \href{https://linkedin.com/in/bhumika-gurav-54b61b3a4}{\underline{linkedin.com/in/bhumika-gurav-54b61b3a4}} \quad
-    \href{https://github.com/Bhumika-1432006}{\underline{github.com/Bhumika-1432006}} \quad
-    \href{https://bhumikagurav.dev}{\underline{bhumikagurav.dev}}
+    \raisebox{-0.1\height}{\faPhone}\ (+91) 7760174205 \quad
+    \href{mailto:guravbhumika808@gmail.com}{\raisebox{-0.2\height}{\faEnvelope}\ \underline{Gmail}} \quad
+    \href{https://linkedin.com/in/bhumika-gurav-54b61b3a4}{\raisebox{-0.2\height}{\faLinkedin}\ \underline{LinkedIn}} \quad
+    \href{https://github.com/Bhumika-1432006}{\raisebox{-0.2\height}{\faGithub}\ \underline{GitHub}}
     \vspace{-8pt}
 \end{center}
 
@@ -114,10 +114,10 @@
       \resumeProjectHeading
           {\textbf{200+ Merged Pull Requests} $|$ \emph{Python, TypeScript, C, AI Agents, Governance, Systems}}{2025 -- 2026}
           \resumeItemListStart
-            \resumeItem{\href{https://github.com/Tracer-Cloud/opensre}{\textbf{OpenSRE}} (11.4k stars) -- Contributed to automated incident-investigation pipelines; wired Slack webhook dispatch, Datadog metric ingestion, and Grafana alert correlation into the AI SRE agent orchestration layer used by thousands of engineers.}
-            \resumeItem{\href{https://github.com/sipyourdrink-ltd/bernstein}{\textbf{Bernstein}} (1.4k stars) -- Patched DLP scanner to emit all rule violations per scan pass, not just the first match (\#5885); introduced cryptographic hash-chaining to SIEM audit exports for tamper-evident compliance trails (\#5605); excised an unsandboxed fast-track bypass that silently circumvented declarative routing constraints (\#5673).}
-            \resumeItem{\href{https://github.com/copperheadhq/copperhead}{\textbf{Copperhead}} (325 stars) -- Extended \texttt{doctor} health-check with \texttt{openspec} binary validation (\#193); root-caused a Windows \texttt{execFile} false-negative on \texttt{.cmd} shims that silently bypassed the dependency gate, letting the PCB generation pipeline consume LLM tokens before surfacing a recoverable error.}
-            \resumeItem{\href{https://github.com/c4punks/CWIST}{\textbf{CWIST}} (16 stars) -- Authored production API reference for \texttt{cookie.h} and \texttt{sse.h} in the HTTP/3, QUIC, io\_uring, post-quantum C17 framework.}
+            \resumeItem{\href{https://github.com/Tracer-Cloud/opensre}{\textbf{OpenSRE}} -- Contributed to automated incident-investigation pipelines; wired Slack webhook dispatch, Datadog metric ingestion, and Grafana alert correlation into the AI SRE agent orchestration layer used by thousands of engineers. [\href{https://github.com/Tracer-Cloud/opensre/pull/4983}{\#4983}]}
+            \resumeItem{\href{https://github.com/sipyourdrink-ltd/bernstein}{\textbf{Bernstein}} -- Patched DLP scanner to emit all rule violations per scan pass, not just the first match [\href{https://github.com/sipyourdrink-ltd/bernstein/pull/5885}{\#5885}]; introduced cryptographic hash-chaining to SIEM audit exports for tamper-evident compliance trails [\href{https://github.com/sipyourdrink-ltd/bernstein/pull/5605}{\#5605}]; excised an unsandboxed fast-track bypass that silently circumvented declarative routing constraints [\href{https://github.com/sipyourdrink-ltd/bernstein/pull/5673}{\#5673}]; \href{https://github.com/sipyourdrink-ltd/bernstein/pulls?q=is\%3Apr+author\%3ABhumika-1432006+is\%3Amerged}{30 more merged}.}
+            \resumeItem{\href{https://github.com/copperheadhq/copperhead}{\textbf{Copperhead}} -- Extended \texttt{doctor} health-check with \texttt{openspec} binary validation [\href{https://github.com/copperheadhq/copperhead/pull/193}{\#193}]; root-caused a Windows \texttt{execFile} false-negative on \texttt{.cmd} shims that silently bypassed the dependency gate, letting the PCB generation pipeline consume LLM tokens before surfacing a recoverable error.}
+            \resumeItem{\href{https://github.com/c4punks/CWIST}{\textbf{CWIST}} -- Hardened the HTTP/3, QUIC, io\_uring C17 framework: replaced \texttt{memcmp} with constant-time HMAC to close a timing-attack surface [\href{https://github.com/c4punks/CWIST/pull/234}{\#234}]; enforced rate-limiter fail-closed semantics to prevent quota bypass under exhaustion [\href{https://github.com/c4punks/CWIST/pull/244}{\#244}]; added oversized-blob rejection to preclude heap overflow in the ingestion path [\href{https://github.com/c4punks/CWIST/pull/248}{\#248}]; \href{https://github.com/c4punks/CWIST/pulls?q=is\%3Apr+author\%3ABhumika-1432006+is\%3Amerged}{62 more merged}.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
     \vspace{-4pt}
