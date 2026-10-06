@@ -131,35 +131,40 @@
       \resumeProjectHeading
           {\textbf{Snap-Class -- AI-Powered Attendance} $|$ \emph{Python, Streamlit, Supabase, Dlib, Bcrypt, Segno, Pandas, NumPy} $|$ \textbf{[1st Prize]}}{May 2026}
           \resumeItemListStart
-            \resumeItem{Deployed a real-time Dlib MMOD CNN face-detection pipeline inside a concurrent multi-user Streamlit app; engineered Supabase PostgreSQL cloud sync with Bcrypt-hashed credentials, Segno TOTP-style QR session tokens, and granular role-based access control for admins and students.}
+            \resumeItem{Built a real-time attendance system using Dlib MMOD CNN face detection inside a multi-user Streamlit app; students are marked present via live webcam without any manual input.}
+            \resumeItem{Integrated Supabase PostgreSQL for cloud storage with Bcrypt-hashed credentials, Segno-generated QR session tokens, and separate role-based access for admins and students.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Med-Synth AI -- Privacy-Preserving Healthcare Data Synthesis} $|$ \emph{Python, Streamlit, Supabase, Scikit-Learn, SDV (CTGAN, TVAE)}}{April 2026}
           \resumeItemListStart
-            \resumeItem{Engineered HIPAA-conscious CTGAN/TVAE generative adversarial pipelines synthesizing structurally valid patient records with zero PII leakage; built KDE-based statistical fidelity audits and neural telemetry dashboards to validate synthetic distributions against source data in real time.}
+            \resumeItem{Generated synthetic patient datasets using CTGAN and TVAE models from the SDV library, preserving statistical structure without exposing any real patient records.}
+            \resumeItem{Built KDE-based fidelity audits and a real-time Streamlit dashboard to compare synthetic vs. source distributions and confirm HIPAA-conscious data quality.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Agro Setu -- Farmer-Dealer Marketplace} $|$ \emph{JavaScript, React, Node.js, Express.js, MongoDB} $|$ \textbf{Patent Pending}}{Jan 2026}
           \resumeItemListStart
-            \resumeItem{Architected a real-time crop auction platform with JWT/Bcrypt session security, MongoDB compound-indexed catalog queries, and event-driven microservices on Vercel and Render; implemented distributed lock semantics to eliminate race conditions across concurrent bid state transitions.}
+            \resumeItem{Built a crop auction platform where farmers list produce and dealers place bids in real time; secured sessions with JWT tokens and Bcrypt-hashed passwords.}
+            \resumeItem{Used MongoDB compound indexes for fast catalog queries and added distributed locking to prevent race conditions when multiple dealers bid simultaneously.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Agit -- AI Session Version Control CLI} $|$ \emph{TypeScript, Node.js, Vitest}}{Sep 2026}
           \resumeItemListStart
-            \resumeItem{Engineered a content-addressed CLI persisting AI coding sessions as Merkle-chained JSONL streams; built runtime adapters with automated PII/credential redaction and prefix-stable token streaming for deterministic cross-machine session replay and fork diffing.}
+            \resumeItem{Built a CLI that saves AI coding sessions as JSONL files where each entry is hash-chained, making it possible to detect tampering and replay sessions deterministically across machines.}
+            \resumeItem{Added runtime adapters that strip credentials and PII before writing to disk, with prefix-stable token streaming so saved sessions can be forked and diffed without corruption.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Sankhya -- High-Performance Computational Engine} $|$ \emph{Python, NumPy, Pandas, PyTorch}}{Aug 2026}
           \resumeItemListStart
-            \resumeItem{Built a vectorized numerical engine leveraging NumPy BLAS-backed broadcasting and Pandas columnar execution for large-scale matrix and statistical operations; implemented PyTorch tensor transformation pipelines for multi-dimensional preprocessing feeding downstream ML workflows.}
+            \resumeItem{Built a numerical computation engine using NumPy broadcasting and Pandas columnar operations to perform large-scale matrix math and statistical analysis on structured datasets.}
+            \resumeItem{Added PyTorch tensor pipelines that handle multi-dimensional data transformations and feed processed outputs directly into downstream ML model training workflows.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -188,7 +193,7 @@
 \section{Certifications}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-      \resumeProjectHeading{\textbf{Apna College} $|$ \emph{Prime: AI \& ML Specialization (Python, PyTorch, GenAI, RAG) $|$ Delta: Full Stack Web Dev $|$ Alpha: DSA with Java}}{2025 -- 2026}
+      \resumeProjectHeading{\textbf{Apna College} $|$ \emph{Prime: AI \& ML Specialization (PyTorch, GenAI, RAG) $|$ Delta: Full Stack Web Dev $|$ Alpha: DSA with Java}}{2025 -- 2026}
       \vspace{-20pt}
       \resumeProjectHeading{\textbf{Udemy} $|$ \emph{Advanced C Programming -- Tim Buchalka's Academy}}{Dec 2024}
       \vspace{-12pt}
@@ -201,9 +206,7 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading{\textbf{1st Prize -- CodeSprint Live Hackathon} $|$ \emph{3-Hour Competitive Coding Sprint, DSATM}}{June 2026}
       \vspace{-20pt}
-      \resumeProjectHeading{\textbf{Round 1 Qualifier -- Smart India Hackathon (SIH)} $|$ \emph{National Level Hackathon}}{2026}
-      \vspace{-20pt}
-      \resumeProjectHeading{\textbf{1st Prize -- PBL Hackathon} $|$ \emph{SnapClass AI Attendance System, DSATM}}{June 2026}
+      \resumeProjectHeading{\textbf{1st Prize -- PBL Hackathon} $|$ \emph{SnapClass AI Attendance System, DSATM}}{July 2026}
       \vspace{-12pt}
     \resumeSubHeadingListEnd
 
