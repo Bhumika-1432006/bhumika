@@ -129,42 +129,37 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Snap-Class -- AI-Powered Attendance} $|$ \emph{Python, Streamlit, Supabase, Dlib, Bcrypt, Segno, Pandas, NumPy} $|$ \textbf{[1st Prize]}}{May 2026}
+          {\textbf{Snap-Class -- AI-Powered Attendance} $|$ \emph{Python, Streamlit, Supabase, Dlib, Bcrypt, Segno} $|$ \textbf{[1st Prize]}}{May 2026}
           \resumeItemListStart
-            \resumeItem{Built a real-time attendance system using Dlib MMOD CNN face detection inside a multi-user Streamlit app; students are marked present via live webcam without any manual input.}
-            \resumeItem{Integrated Supabase PostgreSQL for cloud storage with Bcrypt-hashed credentials, Segno-generated QR session tokens, and separate role-based access for admins and students.}
+            \resumeItem{Built a real-time Dlib MMOD CNN face-detection attendance system in a multi-user Streamlit app; backed by Supabase PostgreSQL with Bcrypt-hashed credentials, Segno QR session tokens, and role-based access for admins and students.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Med-Synth AI -- Privacy-Preserving Healthcare Data Synthesis} $|$ \emph{Python, Streamlit, Supabase, Scikit-Learn, SDV (CTGAN, TVAE)}}{April 2026}
           \resumeItemListStart
-            \resumeItem{Generated synthetic patient datasets using CTGAN and TVAE models from the SDV library, preserving statistical structure without exposing any real patient records.}
-            \resumeItem{Built KDE-based fidelity audits and a real-time Streamlit dashboard to compare synthetic vs. source distributions and confirm HIPAA-conscious data quality.}
+            \resumeItem{Generated synthetic patient datasets using CTGAN and TVAE from the SDV library with zero PII leakage; built KDE-based fidelity audits and a Streamlit dashboard to validate HIPAA-conscious data quality in real time.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Agro Setu -- Farmer-Dealer Marketplace} $|$ \emph{JavaScript, React, Node.js, Express.js, MongoDB} $|$ \textbf{Patent Pending}}{Jan 2026}
           \resumeItemListStart
-            \resumeItem{Built a crop auction platform where farmers list produce and dealers place bids in real time; secured sessions with JWT tokens and Bcrypt-hashed passwords.}
-            \resumeItem{Used MongoDB compound indexes for fast catalog queries and added distributed locking to prevent race conditions when multiple dealers bid simultaneously.}
+            \resumeItem{Built a real-time crop auction platform secured with JWT tokens and Bcrypt passwords; used MongoDB compound indexes for fast catalog queries and distributed locking to prevent race conditions across concurrent bids.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Agit -- AI Session Version Control CLI} $|$ \emph{TypeScript, Node.js, Vitest}}{Sep 2026}
           \resumeItemListStart
-            \resumeItem{Built a CLI that saves AI coding sessions as JSONL files where each entry is hash-chained, making it possible to detect tampering and replay sessions deterministically across machines.}
-            \resumeItem{Added runtime adapters that strip credentials and PII before writing to disk, with prefix-stable token streaming so saved sessions can be forked and diffed without corruption.}
+            \resumeItem{Built a CLI that persists AI coding sessions as hash-chained JSONL files with runtime PII/credential redaction and prefix-stable token streaming for tamper-evident, deterministic cross-machine replay and fork diffing.}
           \resumeItemListEnd
           \vspace{-13pt}
 
       \resumeProjectHeading
           {\textbf{Sankhya -- High-Performance Computational Engine} $|$ \emph{Python, NumPy, Pandas, PyTorch}}{Aug 2026}
           \resumeItemListStart
-            \resumeItem{Built a numerical computation engine using NumPy broadcasting and Pandas columnar operations to perform large-scale matrix math and statistical analysis on structured datasets.}
-            \resumeItem{Added PyTorch tensor pipelines that handle multi-dimensional data transformations and feed processed outputs directly into downstream ML model training workflows.}
+            \resumeItem{Built a vectorized numerical engine using NumPy broadcasting and Pandas columnar operations for large-scale matrix math; added PyTorch tensor pipelines for multi-dimensional preprocessing feeding downstream ML workflows.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
