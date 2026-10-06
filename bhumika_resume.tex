@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Bhumika Gurav} \\ \vspace{1pt}
+    \small
+    (+91) 7760174205 \quad
+    \href{mailto:guravbhumika808@gmail.com}{\underline{guravbhumika808@gmail.com}} \quad
+    \href{https://linkedin.com/in/bhumika-gurav-54b61b3a4}{\underline{linkedin.com/in/bhumika-gurav-54b61b3a4}} \quad
+    \href{https://github.com/Bhumika-1432006}{\underline{github.com/Bhumika-1432006}} \quad
+    \href{https://bhumikagurav.dev}{\underline{bhumikagurav.dev}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dayananda Sagar Academy of Technology and Management}{Bengaluru, Karnataka}
+      {B.E. Information Science Engineering $|$ CGPA: 9.28}{June 2024 -- July 2028}
+    \resumeSubheading
+      {Govt. Pre-University College}{Karwar, Uttar Kannada DT}
+      {II PUC $|$ 95.70\%}{2024}
+    \resumeSubheading
+      {St. Michael's Convent High School}{Karwar, Karnataka}
+      {10th Grade $|$ 99.20\%}{2022}
+  \resumeSubHeadingListEnd
+  \vspace{-4pt}
+
+
+%-----------OPEN SOURCE CONTRIBUTIONS-----------
+\section{Open Source Contributions}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{200+ Merged Pull Requests} $|$ \emph{Python, TypeScript, C, AI Agents, Governance, Systems}}{2025 -- 2026}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/Tracer-Cloud/opensre}{\textbf{OpenSRE}} (11.4k stars) -- Contributed to incident-investigation pipeline; wired Slack, Datadog, and Grafana integrations into the automated root-cause analysis flow for SRE agents used by thousands of engineers.}
+            \resumeItem{\href{https://github.com/sipyourdrink-ltd/bernstein}{\textbf{Bernstein}} (1.4k stars) -- Fixed DLP scanner to surface every rule match, not just the first (\#5885); made SIEM audit exports carry a verifiable hash chain (\#5605); removed a fast-track sandbox bypass that allowed unapproved routing (\#5673).}
+            \resumeItem{\href{https://github.com/copperheadhq/copperhead}{\textbf{Copperhead}} (325 stars) -- Added \texttt{openspec} to the \texttt{doctor} health-check (\#193); diagnosed and fixed a Windows \texttt{.cmd} shim bug where valid installs false-negatived, silently wasting LLM pipeline tokens before detection.}
+            \resumeItem{\href{https://github.com/c4punks/CWIST}{\textbf{CWIST}} (16 stars) -- Authored API reference for \texttt{cookie.h} and \texttt{sse.h} modules in the HTTP/3, QUIC, io\_uring C17 framework.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-4pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Bhumika-1432006/snap-class}{Snap-Class -- AI-Powered Attendance}} $|$ \emph{Python, Streamlit, Supabase, Dlib, Bcrypt, Segno} $|$ \textbf{[1st Prize]}}{May 2026}
+          \resumeItemListStart
+            \resumeItem{Built a real-time Dlib MMOD CNN attendance pipeline in a multi-user Streamlit app with Supabase PostgreSQL sync, Bcrypt hashing, Segno QR session tokens, and role-based access.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Bhumika-1432006/med-synth-ai}{Med-Synth AI -- Healthcare Data Synthesis}} $|$ \emph{Python, Streamlit, Supabase, Scikit-Learn, SDV (CTGAN, TVAE)}}{April 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered HIPAA-conscious CTGAN/TVAE generative pipelines with KDE statistical audits and neural telemetry to validate synthetic patient distributions against source data.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Bhumika-1432006/agro-setu}{Agro Setu -- Farmer-Dealer Marketplace}} $|$ \emph{JavaScript, React, Node.js, Express.js, MongoDB} $|$ \textbf{Patent Pending}}{Jan 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a real-time crop bidding platform with JWT/Bcrypt security, MongoDB-indexed catalog, and dual role-based access handling concurrent auction state without race conditions.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Bhumika-1432006/agit}{Agit -- AI Session Version Control CLI}} $|$ \emph{TypeScript, Node.js, Vitest}}{Sep 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered a CLI logging AI sessions as hash-chained JSONL files with runtime adapters, automated credential redaction, and prefix-stable streaming for reproducible session imports.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Bhumika-1432006/sankhya}{Sankhya -- High-Performance Computational Engine}} $|$ \emph{Python, NumPy, Pandas, PyTorch}}{Aug 2026}
+          \resumeItemListStart
+            \resumeItem{Built a vectorized numerical engine with NumPy/Pandas broadcasting and PyTorch tensor pipelines for large-scale matrix operations feeding downstream ML workflows.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI \& ML}{: Computer Vision (Dlib MMOD CNN), Generative AI (CTGAN, TVAE, SDV), NLP, Scikit-learn, PyTorch, LangChain} \\
+     \vspace{1pt}
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Express.js, Streamlit, Pandas, NumPy, Seaborn} \\
+     \vspace{1pt}
+     \textbf{Languages}{: Python, C, C++, TypeScript, JavaScript, Java, SQL, HTML/CSS} \\
+     \vspace{1pt}
+     \textbf{Databases \& Tools}{: PostgreSQL, MongoDB, MySQL, Supabase $|$ Git, Docker, Kubernetes, Vercel, Render, Postman, VS Code} \\
+     \vspace{1pt}
+     \textbf{Security \& Compliance}{: JWT, Bcrypt, DLP scanning, SIEM audit chains, HIPAA-conscious data pipelines, RFC 8785 (JCS) encoding}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{Apna College} $|$ \emph{Prime: AI \& ML Specialization (Python, PyTorch, GenAI, RAG) $|$ Delta: Full Stack Web Dev $|$ Alpha: DSA with Java}}{2025 -- 2026}
+      \vspace{-20pt}
+      \resumeProjectHeading{\textbf{Udemy} $|$ \emph{Advanced C Programming -- Tim Buchalka's Academy}}{Dec 2024}
+      \vspace{-12pt}
+    \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{1st Prize -- CodeSprint Live Hackathon} $|$ \emph{3-Hour Competitive Coding Sprint, DSATM}}{June 2026}
+      \vspace{-20pt}
+      \resumeProjectHeading{\textbf{Round 1 Qualifier -- Smart India Hackathon (SIH)} $|$ \emph{National Level Hackathon}}{2026}
+      \vspace{-20pt}
+      \resumeProjectHeading{\textbf{1st Prize -- PBL Hackathon} $|$ \emph{SnapClass AI Attendance System, DSATM}}{June 2026}
+      \vspace{-12pt}
+    \resumeSubHeadingListEnd
+
+\end{document}
